@@ -1,0 +1,188 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f3f5fb;
+    color: #26324a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 35px auto;
+    flex: 1;
+}
+
+.search-section,
+.result-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.search-section h2 {
+    margin-top: 0;
+}
+
+#searchForm {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#wordInput {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+#wordInput:focus {
+    outline: 2px solid #818cf8;
+    border-color: #4f46e5;
+}
+
+button {
+    padding: 13px 20px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3730a3;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#status {
+    margin-bottom: 0;
+    color: #4f46e5;
+}
+
+.word-title {
+    font-size: 30px;
+    margin: 0 0 8px;
+    overflow-wrap: anywhere;
+}
+
+.phonetic {
+    color: #64748b;
+    margin: 0 0 12px;
+}
+
+.audio-button {
+    background-color: #ede9fe;
+    color: #4f46e5;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+}
+
+.audio-button:hover {
+    background-color: #ddd6fe;
+}
+
+.meaning {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.part-of-speech {
+    color: #4f46e5;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.definition {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.example {
+    color: #64748b;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+.synonyms {
+    color: #475569;
+    line-height: 1.6;
+}
+
+.welcome {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.error {
+    color: #b91c1c;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 12px;
+    background-color: #e8eaf5;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+footer a {
+    color: #4f46e5;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .search-section,
+    .result-section {
+        padding: 18px;
+    }
+
+    #searchForm {
+        flex-direction: column;
+    }
+
+    #wordInput,
+    #searchButton {
+        width: 100%;
+    }
+}

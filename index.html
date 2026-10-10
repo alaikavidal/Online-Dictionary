@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordWise - Online Dictionary</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>WordWise</h1>
+        <p>Your simple online dictionary</p>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h2>Discover a Word</h2>
+            <p>Search for a word to discover its meaning.</p>
+
+            <form id="searchForm">
+                <input
+                    type="text"
+                    id="wordInput"
+                    placeholder="Enter a word (e.g., beautiful)"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" id="searchButton">
+                    Search
+                </button>
+            </form>
+
+            <p id="status" role="status" aria-live="polite"></p>
+        </section>
+
+        <section id="result" class="result-section" aria-live="polite">
+            <div class="welcome">
+                <h3>Welcome to WordWise!</h3>
+                <p>Your word's definition will appear here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Powered by the
+            <a href="https://dictionaryapi.dev/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Free Dictionary API
+            </a>
+        </p>
+        <p>WordWise Online Dictionary | Systems Integration Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
